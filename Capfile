@@ -9,6 +9,7 @@ require "capistrano/rails"
 require "capistrano/passenger"
 require "capistrano/rbenv"
 require "capistrano/bundler"
+require "capistrano/secrets_yml"
 
 # If you are using rbenv add these lines:
 set :rbenv_type, :user
