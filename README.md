@@ -1,4 +1,4 @@
-# decidim-app
+# decidim-app ahoranostoca
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
