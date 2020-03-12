@@ -8,6 +8,7 @@ require "capistrano/deploy"
 require "capistrano/rails"
 require "capistrano/passenger"
 require "capistrano/rbenv"
+require "capistrano/bundler"
 
 # If you are using rbenv add these lines:
 set :rbenv_type, :user
