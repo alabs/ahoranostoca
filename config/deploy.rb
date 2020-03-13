@@ -12,7 +12,7 @@ set :repo_url, "git@github.com:alabs/ahoranostoca.git"
 # set :deploy_to, "/home/deploy/#{fetch :application}"
 set :deploy_to, "/home/decidim/decidim-app"
 
-append :linked_files, "config/application.yml"
+set :linked_files, "config/application.yml"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
 # Only keep the last 5 releases to save disk space
