@@ -4,6 +4,9 @@ lock "~> 3.12.1"
 set :application, "ahoranostoca"
 set :repo_url, "git@github.com:alabs/ahoranostoca.git"
 
+# set :linked_files, %w{config/application.yml}
+# set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+
 # restart app by running: touch tmp/restart.txt
 # at server machine
 # set :passenger_restart_with_touch, true
@@ -12,9 +15,8 @@ set :repo_url, "git@github.com:alabs/ahoranostoca.git"
 # set :deploy_to, "/home/deploy/#{fetch :application}"
 set :deploy_to, "/home/decidim/decidim-app"
 
+append :linked_files, "config/application.yml"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-set :linked_files, fetch(:linked_files, []).push('config/credentials.yml.enc')
-set :linked_files, fetch(:linked_files, []).push('config/master.key')
 
 # Only keep the last 5 releases to save disk space
 set :keep_releases, 5
