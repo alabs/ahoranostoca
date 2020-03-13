@@ -9,8 +9,8 @@ set :repo_url, "git@github.com:alabs/ahoranostoca.git"
 # set :passenger_restart_with_touch, true
 
 # Deploy to the user's home directory
-set :deploy_to, "/home/deploy/#{fetch :application}"
-# set :deploy_to, "/home/decidim/decidim-app"
+# set :deploy_to, "/home/deploy/#{fetch :application}"
+set :deploy_to, "/home/decidim/decidim-app"
 
 # append :linked_files, "config/application.yml"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
