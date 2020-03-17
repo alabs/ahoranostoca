@@ -1,4 +1,4 @@
-# decidim-app ahoranostoca
+# decidim-app ahoranostoca fci <3 alabs
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
