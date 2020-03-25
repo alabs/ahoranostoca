@@ -1,3 +1,10 @@
+PATH
+  remote: decidim-module-term_customizer
+  specs:
+    decidim-term_customizer (0.20.0)
+      decidim-admin (~> 0.20.0)
+      decidim-core (~> 0.20.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -772,6 +779,7 @@ DEPENDENCIES
   daemons
   decidim (= 0.20.0)
   decidim-dev (= 0.20.0)
+  decidim-term_customizer!
   delayed_job_active_record
   ed25519 (>= 1.2, < 2.0)
   faker (~> 1.9)

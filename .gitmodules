@@ -1,0 +1,3 @@
+[submodule "decidim-module-term_customizer"]
+	path = decidim-module-term_customizer
+	url = https://github.com/mainio/decidim-module-term_customizer.git
