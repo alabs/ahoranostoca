@@ -1,3 +1,6 @@
 [submodule "decidim-module-term_customizer"]
 	path = decidim-module-term_customizer
 	url = https://github.com/mainio/decidim-module-term_customizer.git
+[submodule "decidim-module-calendar"]
+	path = decidim-module-calendar
+	url = https://github.com/alabs/decidim-module-calendar
