@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  api: 
+  domain: 
+  room_name: 
+  decidim_component: one
+
+two:
+  api: 
+  domain: 
+  room_name: 
+  decidim_component: two

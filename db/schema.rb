@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_26_122949) do
+ActiveRecord::Schema.define(version: 2020_04_13_180707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -525,6 +525,16 @@ ActiveRecord::Schema.define(version: 2020_03_26_122949) do
     t.text "reason"
     t.index ["decidim_admin_id"], name: "index_decidim_impersonation_logs_on_decidim_admin_id"
     t.index ["decidim_user_id"], name: "index_decidim_impersonation_logs_on_decidim_user_id"
+  end
+
+  create_table "decidim_jitsi_meetings_jitsi_meetings", force: :cascade do |t|
+    t.jsonb "api"
+    t.jsonb "domain"
+    t.jsonb "room_name"
+    t.bigint "decidim_component_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_component_id"], name: "index_decidim_jitsi_meetings_on_decidim_component_id"
   end
 
   create_table "decidim_meetings_agenda_items", force: :cascade do |t|
