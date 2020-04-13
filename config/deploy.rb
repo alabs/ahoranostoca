@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.12.1"
+lock "~> 3.13.0"
 
 set :application, "ahoranostoca"
 set :repo_url, "git@github.com:alabs/ahoranostoca.git"
@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:alabs/ahoranostoca.git"
 
 # Deploy to the user's home directory
 # set :deploy_to, "/home/deploy/#{fetch :application}"
-set :deploy_to, "/home/decidim/decidim-app/current"
+set :deploy_to, "/home/decidim/decidim-app/"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 append :linked_files, 'config/application.yml'
