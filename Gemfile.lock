@@ -6,17 +6,17 @@ PATH
       decidim-core (>= 0.19.0)
 
 PATH
+  remote: decidim-module-jitsi_meetings
+  specs:
+    decidim-jitsi_meetings (0.20.1)
+      decidim-core (= 0.20.1)
+
+PATH
   remote: decidim-module-term_customizer
   specs:
     decidim-term_customizer (0.20.0)
       decidim-admin (~> 0.20.0)
       decidim-core (~> 0.20.0)
-
-PATH
-  remote: decidim-module-jitsi_meetings
-  specs:
-    decidim-jitsi_meetings (0.20.1)
-      decidim-core (= 0.20.1)
 
 GEM
   remote: https://rubygems.org/
