@@ -1,4 +1,5 @@
 # decidim-app ahoranostoca fci <3 alabs
+with jitsi_meetings
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
