@@ -8,7 +8,8 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '178.63.67.157', user: 'decidim', roles: %w{app db web}, port: 22221
 # set branch: "development"
-set branch: fetch(:branch, 'development')
+# set branch: fetch(:branch, 'development')
+set :branch, proc { `git rev-parse --abbrev-ref development`.chomp }
 set :rails_env, "production"
 
 
