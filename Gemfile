@@ -4,10 +4,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.20.1"
-gem "decidim-term_customizer", path: "./decidim-module-term_customizer"
-gem "decidim-calendar", path: "./decidim-module-calendar"
-gem "decidim-jitsi_meetings", path: 'decidim-module-jitsi_meetings'
+gem "decidim", "0.20.0"
+gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer', branch: '0.20-stable'
+gem "decidim-calendar", git: 'https://github.com/alabs/decidim-module-calendar', branch: 'master'
+gem "decidim-jitsi_meetings", "0.20.0", path: 'decidim-module-jitsi_meetings'
 # gem "decidim-consultations", "0.20.0"
 # gem "decidim-initiatives", "0.20.0"
 
@@ -25,7 +25,7 @@ gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", "0.20.1"
+  gem "decidim-dev", "0.20.0"
 end
 
 group :development do
