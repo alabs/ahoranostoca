@@ -8,7 +8,7 @@ Decidim.register_component(:jitsi_meetings) do |component|
   component.icon = "decidim/jitsi_meetings/icon.svg"
   component.permissions_class_name = "Decidim::JitsiMeetings::Permissions"
 
-  component.query_type = "Decidim::JitsiMeetings::JitsiMeetingsType"
+  # component.query_type = "Decidim::JitsiMeetings::JitsiMeetingsType"
 
   component.on(:create) do |instance|
     Decidim::JitsiMeetings::CreateJitsiMeeting.call(instance) do
