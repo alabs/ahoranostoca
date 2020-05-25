@@ -22,6 +22,8 @@ gem "figaro"
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
+gem 'airbrake', '~> 5.0'
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
