@@ -1,8 +1,13 @@
 // // Variables
 // 
-// $primary: #ef604d;
+ $base-font: 'Josefin Sans', sans-serif;
+ $title-font: 'Staatliches', cursive;
+ $black: #272727;
+ $pink: #FF297A;
+ 
+ $primary: #1565E5;
 // $primary-rgb: 239,96,77;
-// $secondary: #599aa6;
+ $secondary: #1565E5;
 // $secondary-rgb: 89,154,166;
 // $success: #57d685;
 // $success-rgb: 87,214,133;
@@ -26,10 +31,10 @@
 // 
 // // Define custom properties as css color variables
 // 
-// :root{
-//   --primary: #{$primary};
+ :root{
+   --primary: #{$primary};
 //   --primary-rgb: #{$primary-rgb};
-//   --secondary: #{$secondary};
+   --secondary: #{$secondary};
 //   --secondary-rgb: #{$secondary-rgb};
 //   --success: #{$success};
 //   --success-rgb: #{$success-rgb};
@@ -44,11 +49,55 @@
 //   --twitter: #{$twitter};
 //   --facebook: #{$facebook};
 //   --google: #{$google};
-// }
+ }
 
 @import "decidim/application";
 
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Rubik', sans-serif;
+body{
+    font-family: $base-font;
+    color: $black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+.cookie-warning{
+    background: $pink;
+}
+
+.title-bar {
+    background: $primary;
+}
+.navbar{
+    background: $black;
+}
+.main-nav__link a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.main-footer {
+    background-color: $primary;
+    a{
+        color: white;
+        &:hover{
+           color: $black; 
+        }
+    }
+}
+.mini-footer {
+    background-color: $black;
+}
+
+
+@media print, screen and (min-width: 40em){
+.main-nav__link a {
+    padding: 1.4em 2em;
+}
+.main-nav__link--active a {
+    box-shadow: inset 0 4px 0 0 white;
+}
+}
