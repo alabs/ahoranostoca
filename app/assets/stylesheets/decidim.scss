@@ -94,6 +94,13 @@ h1, h2, h3, h4, h5, h6 {
 .button.expanded{
     padding-top: 1.1rem;
 }
+
+//Estadistics
+.home-pam__highlight .home-pam__data{
+    border-bottom: none;
+    border-right: none;
+}
+
 //Footer
 .main-footer {
     background-color: $primary;
