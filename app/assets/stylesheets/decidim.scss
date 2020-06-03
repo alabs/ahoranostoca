@@ -6,6 +6,7 @@
  $pink: #FF297A;
  $yellow: #FFEB26;
  $cyan: #40DCFF;
+ $blue: #1565E5;
  $primary: #1565E5;
 // $primary-rgb: 239,96,77;
  $secondary: #1565E5;
@@ -63,6 +64,20 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
+}
+.bg-blue{
+    background-color: $blue;
+    color: white !important;
+}
+.bg-pink{
+    background-color: $pink;
+    color: white !important;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-cyan{
+    background-color: $cyan;
 }
 
 //Navbar
