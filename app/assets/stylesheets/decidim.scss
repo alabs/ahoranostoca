@@ -105,12 +105,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //Buttons
-.button.small {
-    padding-top: 0.8rem;
-    letter-spacing: 1px;
+.button{
+    border-radius: 6px;
+    padding: 1.2em 1.2em 1em;
+    font-size: 0.8rem;
 }
-.button.expanded{
-    padding-top: 1.1rem;
+.button--sc {
+    letter-spacing: 0.1em;
+}
+.button.hollow {
+    border: 2px solid $blue;
+}
+.button.small {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+.process-header__phase .button, .process-phase .button{
+    font-weight: 600;
+}
+.hollow-border-black {
+    border: 2px solid $black !important;
+    color: $black !important;
+    &:hover{
+        border: 2px solid black !important;
+        background: $black !important;
+        color: white !important; 
+    }
+}
+.button-white {
+    background-color: white;
+    color: $black;
+    &:hover{
+        background-color: $black;
+        color: white;
+    }
 }
 
 //Border backgrounds
@@ -129,6 +157,13 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 98px;
     margin-top: -40px;
     background-size: cover;
+}
+
+//Process
+.process-nav__link {
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 //Estadistics
