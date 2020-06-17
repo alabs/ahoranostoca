@@ -65,6 +65,9 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
+.bg-white{
+    background-color: white;
+}
 .bg-blue{
     background-color: $blue;
     color: white !important;
@@ -108,6 +111,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button.expanded{
     padding-top: 1.1rem;
+}
+
+//Border backgrounds
+.top-welcome {
+    background-image: url(https://raw.githubusercontent.com/alabs/ahoranostoca/dno/app/assets/images/top-welcome.svg);
+    background-repeat: no-repeat;
+    min-height: 98px;
+    margin-top: -40px;
+    z-index: 2000;
+    position: relative;
+    background-size: cover;
+}
+.bottom-welcome {
+    background-image: url(https://raw.githubusercontent.com/alabs/ahoranostoca/dno/app/assets/images/bottom-welcome.svg);
+    background-repeat: no-repeat;
+    min-height: 98px;
+    margin-top: -40px;
+    background-size: cover;
 }
 
 //Estadistics
