@@ -65,6 +65,9 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
+a:hover{
+    color: $blue;
+}
 .bg-white{
     background-color: white;
 }
@@ -81,6 +84,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bg-cyan{
     background-color: $cyan;
+}
+.mb-3{
+    margin-bottom: 3rem;
 }
 
 //Navbar
@@ -104,11 +110,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+//Text
+.home-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $black;
+}
+.text-highlight{
+    text-shadow: none;
+}
+
 //Buttons
 .button{
     border-radius: 6px;
-    padding: 1.2em 1.2em 1em;
-    font-size: 0.8rem;
+    padding: 1.6em 1.6em 1.4em;
+    font-size: 0.7rem;
 }
 .button--sc {
     letter-spacing: 0.1em;
@@ -121,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.8rem;
 }
 .process-header__phase .button, .process-phase .button{
-    font-weight: 600;
+    font-weight: 700;
 }
 .hollow-border-black {
     border: 2px solid $black !important;
@@ -170,6 +187,61 @@ h1, h2, h3, h4, h5, h6 {
 .home-pam__highlight .home-pam__data{
     border-bottom: none;
     border-right: none;
+}
+.home-pam__title {
+    color: white;
+    text-transform: none;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+//According
+.accordion{
+    background: transparent;
+}
+.accordion-title{
+    border: none;
+    color: $black;
+    font-weight: 700;
+    font-size: 1rem;
+    background: white;
+    border-radius: 6px;
+    margin: 0 0 10px;
+}
+.accordion-content{
+    color: $black;
+    border: none;
+    border-radius: 0 0 6px 6px;
+    margin: -15px 0 10px;
+}
+.accordion-item:first-child > :first-child {
+    border-radius: 6px;
+}
+:last-child:not(.is-active) > .accordion-title {
+    border-bottom: none;
+    border-radius: 6px;
+}
+.accordion-title:hover, .accordion-title:focus {
+    background-color: white;
+}
+
+//Forms
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+    color: $black;
+}
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus{
+    border: none;
+    box-shadow: none;
+}
+textarea{
+    height: 180px;
 }
 
 //Footer
