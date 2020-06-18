@@ -85,6 +85,11 @@ a:hover{
 .bg-cyan{
     background-color: $cyan;
 }
+.bg-wall{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/wall-opacity.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+}
 .mb-3{
     margin-bottom: 3rem;
 }
@@ -155,6 +160,17 @@ a:hover{
     &:hover{
         background-color: $black;
         color: white;
+    }
+}
+.button-news{
+    float: right;
+    position: relative;
+    top: -96px;
+    border-radius: 0 6px 6px 0;
+    background: $black;
+    height: 48px;
+    &:hover{
+        background: $blue !important;
     }
 }
 
