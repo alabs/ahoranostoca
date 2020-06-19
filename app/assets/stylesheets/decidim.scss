@@ -1,8 +1,15 @@
 // // Variables
 // 
-// $primary: #ef604d;
+ $base-font: 'Josefin Sans', sans-serif;
+ $title-font: 'Staatliches', cursive;
+ $black: #272727;
+ $pink: #FF297A;
+ $yellow: #FFEB26;
+ $cyan: #40DCFF;
+ $blue: #1565E5;
+ $primary: #1565E5;
 // $primary-rgb: 239,96,77;
-// $secondary: #599aa6;
+ $secondary: #1565E5;
 // $secondary-rgb: 89,154,166;
 // $success: #57d685;
 // $success-rgb: 87,214,133;
@@ -26,10 +33,10 @@
 // 
 // // Define custom properties as css color variables
 // 
-// :root{
-//   --primary: #{$primary};
+ :root{
+   --primary: #{$primary};
 //   --primary-rgb: #{$primary-rgb};
-//   --secondary: #{$secondary};
+   --secondary: #{$secondary};
 //   --secondary-rgb: #{$secondary-rgb};
 //   --success: #{$success};
 //   --success-rgb: #{$success-rgb};
@@ -44,6 +51,91 @@
 //   --twitter: #{$twitter};
 //   --facebook: #{$facebook};
 //   --google: #{$google};
-// }
+ }
 
 @import "decidim/application";
+
+//Basics
+body{
+    font-family: $base-font;
+    color: $black;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+.bg-blue{
+    background-color: $blue;
+    color: white !important;
+}
+.bg-pink{
+    background-color: $pink;
+    color: white !important;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-cyan{
+    background-color: $cyan;
+}
+
+//Navbar
+.cookie-warning{
+    background: $yellow;
+}
+
+.title-bar {
+    background: $primary;
+}
+.navbar{
+    background: $black;
+}
+.topbar__user__login a:hover {
+    color: $black;
+}
+.main-nav__link a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+//Buttons
+.button.small {
+    padding-top: 0.8rem;
+    letter-spacing: 1px;
+}
+.button.expanded{
+    padding-top: 1.1rem;
+}
+
+//Estadistics
+.home-pam__highlight .home-pam__data{
+    border-bottom: none;
+    border-right: none;
+}
+
+//Footer
+.main-footer {
+    background-color: $primary;
+    a{
+        color: white;
+        &:hover{
+           color: $black; 
+        }
+    }
+}
+.mini-footer {
+    background-color: $black;
+}
+
+
+@media print, screen and (min-width: 40em){
+.main-nav__link a {
+    padding: 1.4em 2em;
+}
+.main-nav__link--active a {
+    box-shadow: inset 0 4px 0 0 white;
+}
+}
