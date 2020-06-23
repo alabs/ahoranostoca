@@ -1,7 +1,91 @@
+/* Webfont: Mazurquica-Thin */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Thin.eot'); 
+src: url( 'Mazurquica-Thin.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Thin.woff2') format('woff2'), 
+	 url( 'Mazurquica-Thin.woff') format('woff'), 
+	 url( 'Mazurquica-Thin.ttf') format('truetype');
+font-style: normal;
+font-weight: 100;
+}
+
+/* Webfont: Mazurquica-Light */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Light.eot'); 
+src: url( 'Mazurquica-Light.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Light.woff2') format('woff2'), 
+	 url( 'Mazurquica-Light.woff') format('woff'), 
+	 url( 'Mazurquica-Light.ttf') format('truetype');
+font-style: normal;
+font-weight: 300;
+}
+
+/* Webfont: Mazurquica-Regular */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Regular.eot'); 
+src: url( 'Mazurquica-Regular.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Regular.woff2') format('woff2'), 
+	 url( 'Mazurquica-Regular.woff') format('woff'), 
+	 url( 'Mazurquica-Regular.ttf') format('truetype');
+font-style: normal;
+font-weight: 400;
+}
+
+/* Webfont: Mazurquica-Medium */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Medium.eot'); 
+src: url( 'Mazurquica-Medium.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Medium.woff2') format('woff2'), 
+	 url( 'Mazurquica-Medium.woff') format('woff'), 
+	 url( 'Mazurquica-Medium.ttf') format('truetype');
+font-style: normal;
+font-weight: 500;
+}
+
+/* Webfont: Mazurquica-SemiBold */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-SemiBold.eot'); 
+src: url( 'Mazurquica-SemiBold.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-SemiBold.woff2') format('woff2'), 
+	 url( 'Mazurquica-SemiBold.woff') format('woff'), 
+	 url( 'Mazurquica-SemiBold.ttf') format('truetype');
+font-style: normal;
+font-weight: 600;
+}
+
+/* Webfont: Mazurquica-Bold */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Bold.eot'); 
+src: url( 'Mazurquica-Bold.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Bold.woff2') format('woff2'), 
+	 url( 'Mazurquica-Bold.woff') format('woff'), 
+	 url( 'Mazurquica-Bold.ttf') format('truetype');
+font-style: normal;
+font-weight: 700;
+}
+
+/* Webfont: Mazurquica-Black */
+@font-face {
+font-family: 'Mazurquica';
+src: url( 'Mazurquica-Black.eot'); 
+src: url( 'Mazurquica-Black.eot?#iefix') format('embedded-opentype'),
+	 url( 'Mazurquica-Black.woff2') format('woff2'), 
+	 url( 'Mazurquica-Black.woff') format('woff'), 
+	 url( 'Mazurquica-Black.ttf') format('truetype');
+font-style: normal;
+font-weight: 900;
+}
+
 // // Variables
 // 
  $base-font: 'Josefin Sans', sans-serif;
- $title-font: 'Staatliches', cursive;
+ $title-font: 'Mazurquica';
  $black: #272727;
  $pink: #FF297A;
  $yellow: #FFEB26;
@@ -65,6 +149,13 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
+h1, h2, h3{
+    font-weight: 700;
+}
+h4, h5, h6 {
+    font-weight: 600;
+}
+
 a:hover{
     color: $blue;
 }
@@ -117,13 +208,14 @@ a:hover{
 
 //Text
 .home-subtitle {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: $black;
 }
 .text-highlight{
     text-shadow: none;
+}
+.text-uppercase{
+    text-transform: uppercase;
 }
 
 //Buttons
@@ -178,23 +270,183 @@ a:hover{
 }
 
 //Border backgrounds
-.top-welcome {
-    background-image: url(https://raw.githubusercontent.com/alabs/ahoranostoca/dno/app/assets/images/top-welcome.svg);
-    background-repeat: no-repeat;
-    min-height: 98px;
-    margin-top: -40px;
+.section-over{
+    position: relative;
     z-index: 2000;
+}
+.no-subhero{
+    padding: 4rem 0 0;
+    text-align: center;
+}
+.hero__container {
+    padding: 8rem 0 14rem;
+}
+.welcome-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-top.svg);
+    background-repeat: no-repeat;
+    min-height: 220px;
+    margin-top: -180px;
+    z-index: 100;
     position: relative;
     background-size: cover;
 }
-.bottom-welcome {
-    background-image: url(https://raw.githubusercontent.com/alabs/ahoranostoca/dno/app/assets/images/bottom-welcome.svg);
+.welcome-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-bottom.svg);
     background-repeat: no-repeat;
-    min-height: 98px;
-    margin-top: -40px;
+    min-height: 330px;
+    margin: -210px 0 -100px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#participate {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.access-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-top.svg);
+    background-repeat: no-repeat;
+    min-height: 190px;
+    margin-top: -180px;
+    z-index: 100;
+    position: relative;
     background-size: cover;
 }
-
+div#accessibility {
+    padding-top: 6rem;
+    padding-bottom: 6em;
+}
+.access-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 320px;
+    margin: -220px 0 -100px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#native-language {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.docs-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/docs-top.svg);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    margin-top: -180px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#documents {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.docs-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/docs-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 350px;
+    margin: -200px 0 -130px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#regions {
+    padding-top: 8rem;
+}
+.talks-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/talks-top.svg);
+    background-repeat: no-repeat;
+    min-height: 130px;
+    margin-top: -120px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+.faq-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/faq-top.svg);
+    background-repeat: no-repeat;
+    min-height: 180px;
+    margin-top: -160px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#faq {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/faq-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin: -200px 0 -100px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#figure {
+    padding-top: 6rem;
+}
+.news-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/news-top.svg);
+    background-repeat: no-repeat;
+    min-height: 160px;
+    margin-top: -160px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#news {
+    padding-top: 0;
+}
+.newsletter-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/newsletter-top.svg);
+    background-repeat: no-repeat;
+    min-height: 160px;
+    margin-top: -160px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#suscription {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.newsletter-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/newsletter-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin: -200px 0 -100px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#spread {
+    padding-top: 6rem;
+}
+.contact-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-top.svg);
+    background-repeat: no-repeat;
+    min-height: 160px;
+    margin-top: -160px;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#contact {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.contact-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 290px;
+    margin: -200px 0 -100px;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
 //Process
 .process-nav__link {
     letter-spacing: 1px;
@@ -210,10 +462,17 @@ a:hover{
 .home-pam__title {
     color: white;
     text-transform: none;
-    font-family: 'Josefin Sans',sans-serif;
-    font-size: 1.2rem;
+    font-family: $title-font;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 0 0;
+}
+
+.home-pam__highlight .home-pam__number {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: $title-font;
+    font-weight: 900;
 }
 
 //According
@@ -224,10 +483,11 @@ a:hover{
     border: none;
     color: $black;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.4rem;
     background: white;
     border-radius: 6px;
     margin: 0 0 10px;
+    font-family: $title-font;
 }
 .accordion-content{
     color: $black;
