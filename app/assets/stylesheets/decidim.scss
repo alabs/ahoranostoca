@@ -181,6 +181,12 @@ a:hover{
     background-repeat: repeat;
     background-size: auto;
 }
+.hero::after{
+    background-color: transparent;
+}
+.highligted-content-banner::after{
+    background-color: transparent;
+}
 .mb-3{
     margin-bottom: 3rem;
 }
@@ -313,8 +319,8 @@ div#participate {
     background-size: cover;
 }
 div#accessibility {
-    padding-top: 6rem;
-    padding-bottom: 6em;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .access-bottom {
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-bottom.svg);
@@ -326,7 +332,7 @@ div#accessibility {
     z-index: 100;
 }
 div#native-language {
-    padding-top: 10rem;
+    padding-top: 13rem;
     padding-bottom: 8rem;
 }
 .docs-top{
@@ -387,6 +393,7 @@ div#faq {
 }
 div#figure {
     padding-top: 6rem;
+    padding-bottom: 5rem
 }
 .news-top{
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/news-top.svg);
@@ -428,7 +435,7 @@ div#spread {
 .contact-top{
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-top.svg);
     background-repeat: no-repeat;
-    min-height: 160px;
+    min-height: 180px;
     margin-top: -160px;
     z-index: 100;
     position: relative;
@@ -441,8 +448,8 @@ div#contact {
 .contact-bottom {
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-bottom.svg);
     background-repeat: no-repeat;
-    min-height: 290px;
-    margin: -200px 0 -100px;
+    min-height: 340px;
+    margin: -180px 0 -150px;
     background-size: cover;
     position: relative;
     z-index: 100;
@@ -452,6 +459,34 @@ div#contact {
     letter-spacing: 1px;
     font-size: 0.8em;
     margin-top: 5px;
+}
+
+//Images
+.video-bg {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/video.png);
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    background-position: 33rem 1rem;
+    background-size: 50%;
+}
+.welcome{
+    position: relative;
+    z-index: 5000;
+    float: right;
+    top: -28rem;
+    margin-bottom: -22rem;
+}
+.native{
+    position: relative;
+    margin-top: -54rem;
+    width: 32%;
+}
+.contact {
+    margin-left: -4rem;
+    width: 40%;
+    position: relative;
+    z-index: 4000;
+    margin-bottom: -35rem;
 }
 
 //Estadistics
