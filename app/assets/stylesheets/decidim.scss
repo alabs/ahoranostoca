@@ -194,7 +194,6 @@ a:hover{
     display:none;
 }
 
-
 //Navbar
 .cookie-warning{
     background: $yellow;
@@ -289,13 +288,13 @@ a:hover{
     text-align: center;
 }
 .hero__container {
-    padding: 8rem 0 14rem;
+    padding: 13rem 0 19rem;
 }
 .welcome-top{
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-top.svg);
     background-repeat: no-repeat;
-    min-height: 14rem;
-    margin-top: -12rem;
+    min-height: 17rem;
+    margin-top: -16rem;
     z-index: 100;
     position: relative;
     background-size: cover;
@@ -303,8 +302,8 @@ a:hover{
 .welcome-bottom {
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-bottom.svg);
     background-repeat: no-repeat;
-    min-height: 24rem;
-    margin: -14rem 0 -7rem;
+    min-height: 26rem;
+    margin: -16rem 0 -7rem;
     background-size: cover;
     position: relative;
     z-index: 100;
@@ -316,7 +315,7 @@ div#participate {
 .access-top{
     background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-top.svg);
     background-repeat: no-repeat;
-    min-height: 12rem;
+    min-height: 20rem;
     margin-top: -11rem;
     z-index: 100;
     position: relative;
@@ -458,12 +457,6 @@ div#contact {
     position: relative;
     z-index: 100;
 }
-//Process
-.process-nav__link {
-    letter-spacing: 1px;
-    font-size: 0.8em;
-    margin-top: 5px;
-}
 
 //Images
 .video-bg {
@@ -494,6 +487,13 @@ div#contact {
     margin-bottom: -35rem;
 }
 
+//Process
+.process-nav__link {
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
 //Estadistics
 .home-pam__highlight .home-pam__data{
     border-bottom: none;
@@ -513,11 +513,6 @@ div#contact {
     line-height: 1;
     font-family: $title-font;
     font-weight: 900;
-}
-.home-pam__highlight .home-pam__data {
-    border-bottom: none;
-    border-right: none;
-    margin-bottom: 2rem;
 }
 
 //According
@@ -582,6 +577,134 @@ textarea{
     background-color: $black;
 }
 
+@media print, screen and (max-width: 80em){
+.visible-mobile{
+    display:none;
+}
+    //Border backgrounds
+.hero__container {
+    padding: 8rem 0 14rem;
+}
+.welcome-top{
+    min-height: 14rem;
+    margin-top: -12rem;
+}
+.welcome-bottom {
+    min-height: 24rem;
+    margin: -14rem 0 -7rem;
+}
+div#participate {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.access-top{
+    min-height: 12rem;
+    margin-top: -11rem;
+}
+div#accessibility {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.access-bottom {
+    min-height: 20rem;
+    margin: -14rem 0 -7rem;
+}
+div#native-language {
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+}
+.docs-top{
+    min-height: 13rem;
+    margin-top: -13rem;
+}
+div#documents {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.docs-bottom {
+    min-height: 22rem;
+    margin: -13rem 0 -8rem;
+}
+div#regions {
+    padding-top: 8rem;
+}
+.talks-top{
+    min-height: 8rem;
+    margin-top: -7rem;
+}
+.faq-top{
+    min-height: 11rem;
+    margin-top: -10rem;
+}
+div#faq {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-bottom {
+    min-height: 18rem;
+    margin: -13rem 0 -7rem;
+}
+div#figure {
+    padding-top: 6rem;
+    padding-bottom: 5rem
+}
+.news-top{
+    min-height: 10rem;
+    margin-top: -10rem;
+}
+div#news {
+    padding-top: 0;
+}
+.newsletter-top{
+    min-height: 10rem;
+    margin-top: -10rem;
+}
+div#suscription {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.newsletter-bottom {
+    min-height: 18rem;
+    margin: -13rem 0 -6rem;
+}
+div#spread {
+    padding-top: 6rem;
+}
+.contact-top{
+    min-height: 11rem;
+    margin-top: -10rem;
+}
+div#contact {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.contact-bottom {
+    min-height: 21rem;
+    margin: -11rem 0 -9rem;
+}
+
+//Images
+.video-bg {
+    padding: 4rem 0;
+    background-position: 33rem 1rem;
+    background-size: 50%;
+}
+.welcome{
+    float: right;
+    top: -28rem;
+    margin-bottom: -22rem;
+}
+.native{
+    margin-top: -54rem;
+    width: 32%;
+}
+.contact {
+    margin-left: -4rem;
+    width: 40%;
+    margin-bottom: -35rem;
+}
+}    
+
 @media print, screen and (max-width: 62em){
 .hero-heading {
     font-size: 3.5rem;
@@ -590,12 +713,11 @@ textarea{
     text-align: center;
 }
 .visible-mobile{
-    display: block;
+    display:block;
 }
 .visible-desk{
-    display: none;
+    display:none;
 }
-
 //Borders
 .hero__container {
     padding: 13rem 0 19rem;
