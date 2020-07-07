@@ -126,3 +126,10 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+Decidim.menu :menu do |menu|
+  menu.item I18n.t("decidim.menu.noticias"),
+    "https://pre.ahoranostoca.cl",
+    position: 5,
+    active: :inclusive
+end
