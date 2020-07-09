@@ -131,5 +131,5 @@ Decidim.menu :menu do |menu|
   menu.item I18n.t("decidim.menu.noticias"),
     "https://pre.ahoranostoca.cl",
     position: 5,
-    active: :inclusive
+    active: false
 end
