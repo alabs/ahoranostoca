@@ -155,9 +155,15 @@ h1, h2, h3{
 h4, h5, h6 {
     font-weight: 600;
 }
+h6{
+    font-size: 1.8rem;
+}
 
 a:hover{
     color: $blue;
+}
+.hero{
+    background-size: contain;
 }
 .bg-white{
     background-color: white;
@@ -500,11 +506,73 @@ div#logos {
     margin-bottom: -53rem;
 }
 
+//Documents
+.heading6 {
+    font-size: 1.4em;
+}
+.text-small {
+    font-size: 90%;
+}
+
+//Cards
+.heading5, .card__title, .author-data--big .author__name {
+    font-size: 1.8em;
+}
+.card__status {
+    display: none;
+}
+.card__icondata {
+    display: none;
+}
+.card__footer, .card__top {
+    background: transparent; 
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    clear: both;
+}
+
+//Asemblies
+div#assemblies-filter {
+    display: none;
+}
+
 //Process
+div#participatory-space-filters {
+    display: none;
+}
+.section-heading {
+    display: none;
+}
 .process-nav__link {
     letter-spacing: 1px;
     font-size: 0.8em;
     margin-top: 5px;
+}
+.process-header__inner {
+    height: 300px;
+}
+.process-header__main {
+    clip-path: none;
+    background-position: center;
+}
+.process-header .heading2, {
+    font-size: 3em;
+    line-hegith: 2.6rem;
+}
+.heading-small {
+    font-size: 1.6rem;
+}
+.extra{
+    display: none;
+}
+.data-definition{
+    display: none;
+}
+.tech-info{
+    display: none;
+}
+.share-link {
+    display: none;
 }
 
 //Estadistics
@@ -579,6 +647,8 @@ textarea{
 //Footer
 .main-footer {
     background-color: $primary;
+    padding: 3rem 0;
+    min-height: 130px;
     a{
         color: white;
         &:hover{
@@ -588,6 +658,9 @@ textarea{
 }
 .mini-footer {
     background-color: $black;
+}
+.footer-social {
+    padding-top: 1.2rem;
 }
 
 @media print, screen and (max-width: 80em){
