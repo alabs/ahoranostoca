@@ -5,3 +5,7 @@ es:
       assemblies: "Territorios"
       help: "Sobre el proyecto"
       noticias: "Noticias"
+    pages:
+      index:
+        title: "Sobre el proyecto"
+        subheading: " "
