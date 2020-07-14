@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_13_180707) do
+ActiveRecord::Schema.define(version: 2020_07_14_193207) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1305,6 +1305,12 @@ ActiveRecord::Schema.define(version: 2020_04_13_180707) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
+  end
+
+  create_table "newsletter_requests", force: :cascade do |t|
+    t.json "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|
