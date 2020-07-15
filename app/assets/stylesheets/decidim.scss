@@ -1,11 +1,11 @@
 /* Webfont: Mazurquica-Thin */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Thin.eot'); 
-src: url( 'Mazurquica-Thin.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Thin.woff2') format('woff2'), 
-	 url( 'Mazurquica-Thin.woff') format('woff'), 
-	 url( 'Mazurquica-Thin.ttf') format('truetype');
+src: font-url( 'Mazurquica-Thin.eot'); 
+src: font-url( 'Mazurquica-Thin.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Thin.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Thin.woff') format('woff'), 
+	 font-url( 'Mazurquica-Thin.ttf') format('truetype');
 font-style: normal;
 font-weight: 100;
 }
@@ -13,11 +13,11 @@ font-weight: 100;
 /* Webfont: Mazurquica-Light */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Light.eot'); 
-src: url( 'Mazurquica-Light.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Light.woff2') format('woff2'), 
-	 url( 'Mazurquica-Light.woff') format('woff'), 
-	 url( 'Mazurquica-Light.ttf') format('truetype');
+src: font-url( 'Mazurquica-Light.eot'); 
+src: font-url( 'Mazurquica-Light.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Light.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Light.woff') format('woff'), 
+	 font-url( 'Mazurquica-Light.ttf') format('truetype');
 font-style: normal;
 font-weight: 300;
 }
@@ -25,11 +25,11 @@ font-weight: 300;
 /* Webfont: Mazurquica-Regular */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Regular.eot'); 
-src: url( 'Mazurquica-Regular.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Regular.woff2') format('woff2'), 
-	 url( 'Mazurquica-Regular.woff') format('woff'), 
-	 url( 'Mazurquica-Regular.ttf') format('truetype');
+src: font-url( 'Mazurquica-Regular.eot'); 
+src: font-url( 'Mazurquica-Regular.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Regular.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Regular.woff') format('woff'), 
+	 font-url( 'Mazurquica-Regular.ttf') format('truetype');
 font-style: normal;
 font-weight: 400;
 }
@@ -37,11 +37,11 @@ font-weight: 400;
 /* Webfont: Mazurquica-Medium */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Medium.eot'); 
-src: url( 'Mazurquica-Medium.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Medium.woff2') format('woff2'), 
-	 url( 'Mazurquica-Medium.woff') format('woff'), 
-	 url( 'Mazurquica-Medium.ttf') format('truetype');
+src: font-url( 'Mazurquica-Medium.eot'); 
+src: font-url( 'Mazurquica-Medium.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Medium.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Medium.woff') format('woff'), 
+	 font-url( 'Mazurquica-Medium.ttf') format('truetype');
 font-style: normal;
 font-weight: 500;
 }
@@ -49,11 +49,11 @@ font-weight: 500;
 /* Webfont: Mazurquica-SemiBold */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-SemiBold.eot'); 
-src: url( 'Mazurquica-SemiBold.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-SemiBold.woff2') format('woff2'), 
-	 url( 'Mazurquica-SemiBold.woff') format('woff'), 
-	 url( 'Mazurquica-SemiBold.ttf') format('truetype');
+src: font-url( 'Mazurquica-SemiBold.eot'); 
+src: font-url( 'Mazurquica-SemiBold.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-SemiBold.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-SemiBold.woff') format('woff'), 
+	 font-url( 'Mazurquica-SemiBold.ttf') format('truetype');
 font-style: normal;
 font-weight: 600;
 }
@@ -61,11 +61,11 @@ font-weight: 600;
 /* Webfont: Mazurquica-Bold */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Bold.eot'); 
-src: url( 'Mazurquica-Bold.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Bold.woff2') format('woff2'), 
-	 url( 'Mazurquica-Bold.woff') format('woff'), 
-	 url( 'Mazurquica-Bold.ttf') format('truetype');
+src: font-url( 'Mazurquica-Bold.eot'); 
+src: font-url( 'Mazurquica-Bold.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Bold.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Bold.woff') format('woff'), 
+	 font-url( 'Mazurquica-Bold.ttf') format('truetype');
 font-style: normal;
 font-weight: 700;
 }
@@ -73,11 +73,11 @@ font-weight: 700;
 /* Webfont: Mazurquica-Black */
 @font-face {
 font-family: 'Mazurquica';
-src: url( 'Mazurquica-Black.eot'); 
-src: url( 'Mazurquica-Black.eot?#iefix') format('embedded-opentype'),
-	 url( 'Mazurquica-Black.woff2') format('woff2'), 
-	 url( 'Mazurquica-Black.woff') format('woff'), 
-	 url( 'Mazurquica-Black.ttf') format('truetype');
+src: font-url( 'Mazurquica-Black.eot'); 
+src: font-url( 'Mazurquica-Black.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Black.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Black.woff') format('woff'), 
+	 font-url( 'Mazurquica-Black.ttf') format('truetype');
 font-style: normal;
 font-weight: 900;
 }
@@ -661,6 +661,7 @@ textarea{
 }
 .footer-social {
     padding-top: 1.2rem;
+    margin: 0;
 }
 
 @media print, screen and (max-width: 80em){
