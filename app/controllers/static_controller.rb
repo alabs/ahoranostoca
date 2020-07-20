@@ -1,10 +1,8 @@
 class StaticController < ApplicationController
   skip_forgery_protection
   def contact
-	  p "contact post"
-	  p contact_params.inspect
-	  p contact_params
-	  p "contact post"
+      ContactRequest.create(:data => contact_params)
+      render :json => {:status => "OK"} 
   end
 
   def newsletter
