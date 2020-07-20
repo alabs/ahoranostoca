@@ -12,4 +12,4 @@ es:
   layouts:
     decidim:
       process_navigation:
-        process_menu_item: "*"
+        process_menu_item: "Sobre esta sección"
