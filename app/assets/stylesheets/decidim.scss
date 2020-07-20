@@ -226,6 +226,9 @@ a:hover{
     font-size: 1.6rem;
     color: $black;
 }
+a>h4.home-subtitle{
+    color: $blue;
+}
 .text-highlight{
     text-shadow: none;
 }
@@ -282,6 +285,15 @@ a:hover{
     &:hover{
         background: $blue !important;
     }
+}
+.callout.warning {
+    display: none;
+}
+.floating-helper__text{
+    display: none;
+}
+.floating-helper__icon{
+    display: none;
 }
 
 //Border backgrounds
@@ -535,6 +547,9 @@ div#logos {
 div#assemblies-filter {
     display: none;
 }
+section#assemblies-chart {
+    display: none;
+}
 
 //Process
 div#participatory-space-filters {
@@ -746,6 +761,8 @@ div#figure {
 div#news {
     padding-top: 0;
     padding-bottom: 4rem;
+    z-index: 2000;
+    position: relative;
 }
 .newsletter-top{
     min-height: 10rem;
