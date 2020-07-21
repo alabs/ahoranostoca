@@ -225,8 +225,9 @@ a:hover{
 .home-subtitle {
     font-size: 1.6rem;
     color: $black;
+    line-height: 1.2;
 }
-a>h4.home-subtitle{
+a>h4.home-subtitle:hover{
     color: $blue;
 }
 .text-highlight{
