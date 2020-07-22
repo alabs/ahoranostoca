@@ -296,6 +296,12 @@ a>h4.home-subtitle:hover{
 .floating-helper__icon{
     display: none;
 }
+.floating-helper__content {
+    display: none;
+}
+.floating-helper__content-close{
+    display: none;
+}
 
 //Border backgrounds
 .section-over{
@@ -578,16 +584,10 @@ div#participatory-space-filters {
 .heading-small {
     font-size: 1.6rem;
 }
-.extra{
-    display: none;
-}
 .data-definition{
     display: none;
 }
 .tech-info{
-    display: none;
-}
-.share-link {
     display: none;
 }
 
