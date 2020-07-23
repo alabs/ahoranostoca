@@ -158,7 +158,9 @@ h4, h5, h6 {
 h6{
     font-size: 1.8rem;
 }
-
+p{
+    font-size: 1.1rem;
+}
 a:hover{
     color: $blue;
 }
@@ -296,11 +298,23 @@ a>h4.home-subtitle:hover{
 .floating-helper__icon{
     display: none;
 }
-.floating-helper__content {
-    display: none;
-}
 .floating-helper__content-close{
     display: none;
+}
+.floating-helper__icon-big{
+    display: none;
+}
+.floating-helper__content {
+    background-color: transparent;
+    border-top: none;
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-family: $title-font;
+    line-height: 1.2;
+    text-align: center;
+}
+.floating-helper__content-inner p {
+    line-height: 1.2 !important;
 }
 
 //Border backgrounds
@@ -659,6 +673,9 @@ div#participatory-space-filters {
 textarea{
     height: 180px;
 }
+p#success-subscription {
+    text-align: left;
+}
 
 //Footer
 .main-footer {
@@ -681,6 +698,10 @@ textarea{
 }
 
 @media print, screen and (max-width: 80em){
+.floating-helper__content {
+    font-size: 2.5em;
+
+}
 .visible-mobile{
     display:none;
 }
