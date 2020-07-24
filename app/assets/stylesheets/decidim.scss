@@ -308,13 +308,13 @@ a>h4.home-subtitle:hover{
     background-color: transparent;
     border-top: none;
     margin-bottom: 0;
-    font-size: 3rem;
     font-family: $title-font;
     line-height: 1.2;
     text-align: center;
 }
 .floating-helper__content-inner p {
     line-height: 1.2 !important;
+    font-size: 3rem;
 }
 
 //Border backgrounds
@@ -698,9 +698,8 @@ p#success-subscription {
 }
 
 @media print, screen and (max-width: 80em){
-.floating-helper__content {
-    font-size: 2.5em;
-
+.floating-helper__content-inner p {
+    font-size: 2.5rem;
 }
 .visible-mobile{
     display:none;
