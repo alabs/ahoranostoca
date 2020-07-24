@@ -8,12 +8,12 @@ Decidim.configure do |config|
   config.default_locale = :en
   config.available_locales = [:en, :ca, :es]
 
-  # Geocoder configuration
-  config.geocoder = {
-    static_map_url: "https://image.maps.cit.api.here.com/mia/1.6/mapview",
-    here_app_id: Rails.application.secrets.geocoder[:here_app_id],
-    here_app_code: Rails.application.secrets.geocoder[:here_app_code]
-  }
+  # # Geocoder configuration
+  # config.geocoder = {
+  #   static_map_url: "https://image.maps.cit.api.here.com/mia/1.6/mapview",
+  #   here_app_id: Rails.application.secrets.geocoder[:here_app_id],
+  #   here_app_code: Rails.application.secrets.geocoder[:here_app_code]
+  # }
 
   # Custom resource reference generator method
   # config.reference_generator = lambda do |resource, component|
@@ -126,3 +126,10 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+Decidim.menu :menu do |menu|
+  menu.item I18n.t("decidim.menu.noticias"),
+    "https://pre.ahoranostoca.cl/processes/noticias/f/61/",
+    position: 5,
+    active: false
+end

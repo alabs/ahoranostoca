@@ -1,0 +1,15 @@
+es:
+  decidim:
+    menu:
+      processes: "¿Cómo participar?"
+      assemblies: "Territorios"
+      help: "Sobre el proyecto"
+      noticias: "Noticias"
+    pages:
+      index:
+        title: "Sobre el proyecto"
+        subheading: " "
+  layouts:
+    decidim:
+      process_navigation:
+        process_menu_item: "Sobre esta sección"

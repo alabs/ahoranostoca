@@ -1,8 +1,99 @@
+/* Webfont: Mazurquica-Thin */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Thin.eot'); 
+src: font-url( 'Mazurquica-Thin.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Thin.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Thin.woff') format('woff'), 
+	 font-url( 'Mazurquica-Thin.ttf') format('truetype');
+font-style: normal;
+font-weight: 100;
+}
+
+/* Webfont: Mazurquica-Light */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Light.eot'); 
+src: font-url( 'Mazurquica-Light.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Light.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Light.woff') format('woff'), 
+	 font-url( 'Mazurquica-Light.ttf') format('truetype');
+font-style: normal;
+font-weight: 300;
+}
+
+/* Webfont: Mazurquica-Regular */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Regular.eot'); 
+src: font-url( 'Mazurquica-Regular.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Regular.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Regular.woff') format('woff'), 
+	 font-url( 'Mazurquica-Regular.ttf') format('truetype');
+font-style: normal;
+font-weight: 400;
+}
+
+/* Webfont: Mazurquica-Medium */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Medium.eot'); 
+src: font-url( 'Mazurquica-Medium.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Medium.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Medium.woff') format('woff'), 
+	 font-url( 'Mazurquica-Medium.ttf') format('truetype');
+font-style: normal;
+font-weight: 500;
+}
+
+/* Webfont: Mazurquica-SemiBold */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-SemiBold.eot'); 
+src: font-url( 'Mazurquica-SemiBold.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-SemiBold.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-SemiBold.woff') format('woff'), 
+	 font-url( 'Mazurquica-SemiBold.ttf') format('truetype');
+font-style: normal;
+font-weight: 600;
+}
+
+/* Webfont: Mazurquica-Bold */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Bold.eot'); 
+src: font-url( 'Mazurquica-Bold.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Bold.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Bold.woff') format('woff'), 
+	 font-url( 'Mazurquica-Bold.ttf') format('truetype');
+font-style: normal;
+font-weight: 700;
+}
+
+/* Webfont: Mazurquica-Black */
+@font-face {
+font-family: 'Mazurquica';
+src: font-url( 'Mazurquica-Black.eot'); 
+src: font-url( 'Mazurquica-Black.eot?#iefix') format('embedded-opentype'),
+	 font-url( 'Mazurquica-Black.woff2') format('woff2'), 
+	 font-url( 'Mazurquica-Black.woff') format('woff'), 
+	 font-url( 'Mazurquica-Black.ttf') format('truetype');
+font-style: normal;
+font-weight: 900;
+}
+
 // // Variables
 // 
-// $primary: #ef604d;
+ $base-font: 'Josefin Sans', sans-serif;
+ $title-font: 'Mazurquica';
+ $black: #272727;
+ $pink: #FF297A;
+ $yellow: #FFEB26;
+ $cyan: #40DCFF;
+ $blue: #1565E5;
+ $primary: #1565E5;
 // $primary-rgb: 239,96,77;
-// $secondary: #599aa6;
+ $secondary: #1565E5;
 // $secondary-rgb: 89,154,166;
 // $success: #57d685;
 // $success-rgb: 87,214,133;
@@ -26,10 +117,10 @@
 // 
 // // Define custom properties as css color variables
 // 
-// :root{
-//   --primary: #{$primary};
+ :root{
+   --primary: #{$primary};
 //   --primary-rgb: #{$primary-rgb};
-//   --secondary: #{$secondary};
+   --secondary: #{$secondary};
 //   --secondary-rgb: #{$secondary-rgb};
 //   --success: #{$success};
 //   --success-rgb: #{$success-rgb};
@@ -44,6 +135,825 @@
 //   --twitter: #{$twitter};
 //   --facebook: #{$facebook};
 //   --google: #{$google};
-// }
+ }
 
 @import "decidim/application";
+
+//Basics
+body{
+    font-family: $base-font;
+    color: $black;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+h1, h2, h3{
+    font-weight: 700;
+}
+h4, h5, h6 {
+    font-weight: 600;
+}
+h6{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.1rem;
+}
+a:hover{
+    color: $blue;
+}
+.hero{
+    background-size: contain;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-blue{
+    background-color: $blue;
+    color: white !important;
+}
+.bg-pink{
+    background-color: $pink;
+    color: white !important;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-cyan{
+    background-color: $cyan;
+}
+.bg-wall{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/wall-opacity.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+.hero::after{
+    background-color: transparent;
+}
+.highligted-content-banner::after{
+    background-color: transparent;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.visible-mobile{
+    display:none;
+}
+
+//Navbar
+.cookie-warning{
+    background: $yellow;
+}
+
+.title-bar {
+    background: $primary;
+}
+.navbar{
+    background: $black;
+}
+.topbar__user__login a:hover {
+    color: $black;
+}
+.main-nav__link a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+//Text
+.home-subtitle {
+    font-size: 1.6rem;
+    color: $black;
+    line-height: 1.2;
+}
+a>h4.home-subtitle:hover{
+    color: $blue;
+}
+.text-highlight{
+    text-shadow: none;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+//Buttons
+.button{
+    border-radius: 6px;
+    padding: 1.6em 1.6em 1.4em;
+    font-size: 0.7rem;
+}
+.button--sc {
+    letter-spacing: 0.1em;
+}
+.button.hollow {
+    border: 2px solid $blue;
+}
+.button.small {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+.process-header__phase .button, .process-phase .button{
+    font-weight: 700;
+}
+.hollow-border-black {
+    border: 2px solid $black !important;
+    color: $black !important;
+    &:hover{
+        border: 2px solid black !important;
+        background: $black !important;
+        color: white !important; 
+    }
+}
+.hollow-small{
+    padding: 1em 1em 0.8em;
+}
+.button-white {
+    background-color: white;
+    color: $black;
+    &:hover{
+        background-color: $black;
+        color: white;
+    }
+}
+.button-news{
+    float: right;
+    position: relative;
+    top: -96px;
+    border-radius: 0 6px 6px 0;
+    background: $black;
+    height: 48px;
+    &:hover{
+        background: $blue !important;
+    }
+}
+.callout.warning {
+    display: none;
+}
+.floating-helper__text{
+    display: none;
+}
+.floating-helper__icon{
+    display: none;
+}
+.floating-helper__content-close{
+    display: none;
+}
+.floating-helper__icon-big{
+    display: none;
+}
+.floating-helper__content {
+    background-color: transparent;
+    border-top: none;
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-family: $title-font;
+    line-height: 1.2;
+    text-align: center;
+}
+.floating-helper__content-inner p {
+    line-height: 1.2 !important;
+}
+
+//Border backgrounds
+.section-over{
+    position: relative;
+    z-index: 2000;
+}
+.section-over-over{
+    position: relative;
+    z-index: 7000;
+}
+.no-subhero{
+    padding: 4rem 0 0;
+    text-align: center;
+}
+.hero__container {
+    padding: 13rem 0 19rem;
+}
+.welcome-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-top.svg);
+    background-repeat: no-repeat;
+    min-height: 17rem;
+    margin-top: -16rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+.welcome-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/welcome-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 26rem;
+    margin: -16rem 0 -7rem;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#participate {
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+}
+.access-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-top.svg);
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    margin-top: -11rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#accessibility {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.access-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/access-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    margin: -17rem 0 -10rem;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#native-language {
+    padding-top: 14rem;
+    padding-bottom: 16rem;
+}
+.docs-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/docs-top.svg);
+    background-repeat: no-repeat;
+    min-height: 19rem;
+    margin-top: -19rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#documents {
+    padding-top: 6rem;
+    padding-bottom: 0;
+}
+.docs-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/docs-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 32rem;
+    margin: -13rem 0 -8rem;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#regions {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+}
+.talks-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/talks-top.svg);
+    background-repeat: no-repeat;
+    min-height: 11rem;
+    margin-top: -9rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#dialogues {
+    padding-bottom: 10rem;
+}
+.faq-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/faq-top.svg);
+    background-repeat: no-repeat;
+    min-height: 16rem;
+    margin-top: -15rem;
+    z-index: 5000;
+    position: relative;
+    background-size: cover;
+}
+div#faq {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/faq-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 26rem;
+    margin: -13rem 0 -7rem;
+    background-size: cover;
+    position: relative;
+    z-index: 5000;
+}
+div#figure {
+    padding-top: 9rem;
+    padding-bottom: 5rem
+}
+.news-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/news-top.svg);
+    background-repeat: no-repeat;
+    min-height: 13rem;
+    margin-top: -12rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#news {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.newsletter-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/newsletter-top.svg);
+    background-repeat: no-repeat;
+    min-height: 13rem;
+    margin-top: -13rem;
+    z-index: 4000;
+    position: relative;
+    background-size: cover;
+}
+div#suscription {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.newsletter-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/newsletter-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 27rem;
+    margin: -19rem 0 -6rem;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#spread {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+.contact-top{
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-top.svg);
+    background-repeat: no-repeat;
+    min-height: 17rem;
+    margin-top: -16rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+}
+div#contact {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.contact-bottom {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/contact-bottom.svg);
+    background-repeat: no-repeat;
+    min-height: 31rem;
+    margin: -11rem 0 -15rem;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+div#logos {
+    padding-top: 10rem;
+}
+
+//Images
+.video-bg {
+    background-image: url(https://raw.githubusercontent.com/lissteilor/antp/master/video.png);
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    background-position: 33rem 1rem;
+    background-size: 50%;
+}
+.welcome{
+    position: relative;
+    z-index: 5000;
+    float: right;
+    top: -28rem;
+    margin-bottom: -22rem;
+}
+.native{
+    position: relative;
+    margin-top: -54rem;
+    width: 32%;
+    z-index: 5000;
+}
+.contact {
+    margin-left: -4rem;
+    width: 35%;
+    position: relative;
+    z-index: 4000;
+    margin-bottom: -53rem;
+}
+
+//Documents
+.heading6 {
+    font-size: 1.4em;
+}
+.text-small {
+    font-size: 90%;
+}
+
+//Cards
+.heading5, .card__title, .author-data--big .author__name {
+    font-size: 1.8em;
+}
+.card__status {
+    display: none;
+}
+.card__icondata {
+    display: none;
+}
+.card__footer, .card__top {
+    background: transparent; 
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    clear: both;
+}
+
+//Asemblies
+div#assemblies-filter {
+    display: none;
+}
+section#assemblies-chart {
+    display: none;
+}
+
+//Process
+div#participatory-space-filters {
+    display: none;
+}
+.section-heading {
+    display: none;
+}
+.process-nav__link {
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+.process-header__inner {
+    height: 300px;
+}
+.process-header__main {
+    clip-path: none;
+    background-position: center;
+}
+.process-header .heading2, {
+    font-size: 3em;
+    line-hegith: 2.6rem;
+}
+.heading-small {
+    font-size: 1.6rem;
+}
+.data-definition{
+    display: none;
+}
+.tech-info{
+    display: none;
+}
+
+//Estadistics
+.home-pam__highlight .home-pam__data{
+    border-bottom: none;
+    border-right: none;
+}
+.home-pam__title {
+    color: white;
+    text-transform: none;
+    font-family: $title-font;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0;
+}
+
+.home-pam__highlight .home-pam__number {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: $title-font;
+    font-weight: 900;
+}
+
+//According
+.accordion{
+    background: transparent;
+}
+.accordion-title{
+    border: none;
+    color: $black;
+    font-weight: 700;
+    font-size: 1.4rem;
+    background: white;
+    border-radius: 6px;
+    margin: 0 0 10px;
+    font-family: $title-font;
+}
+.accordion-content{
+    color: $black;
+    border: none;
+    border-radius: 0 0 6px 6px;
+    margin: -15px 0 10px;
+}
+.accordion-item:first-child > :first-child {
+    border-radius: 6px;
+}
+:last-child:not(.is-active) > .accordion-title {
+    border-bottom: none;
+    border-radius: 6px;
+}
+.accordion-title:hover, .accordion-title:focus {
+    background-color: white;
+}
+
+//Forms
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+    color: $black;
+}
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus{
+    border: none;
+    box-shadow: none;
+}
+textarea{
+    height: 180px;
+}
+p#success-subscription {
+    text-align: left;
+}
+
+//Footer
+.main-footer {
+    background-color: $primary;
+    padding: 3rem 0;
+    min-height: 130px;
+    a{
+        color: white;
+        &:hover{
+           color: $black; 
+        }
+    }
+}
+.mini-footer {
+    background-color: $black;
+}
+.footer-social {
+    padding-top: 1.2rem;
+    margin: 0;
+}
+
+@media print, screen and (max-width: 80em){
+.floating-helper__content {
+    font-size: 2.5em;
+
+}
+.visible-mobile{
+    display:none;
+}
+    //Border backgrounds
+.hero__container {
+    padding: 8rem 0 14rem;
+}
+.welcome-top{
+    min-height: 14rem;
+    margin-top: -12rem;
+}
+.welcome-bottom {
+    min-height: 24rem;
+    margin: -14rem 0 -7rem;
+}
+div#participate {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.access-top{
+    min-height: 12rem;
+    margin-top: -11rem;
+}
+div#accessibility {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.access-bottom {
+    min-height: 20rem;
+    margin: -14rem 0 -7rem;
+}
+div#native-language {
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+}
+.docs-top{
+    min-height: 13rem;
+    margin-top: -13rem;
+}
+div#documents {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.docs-bottom {
+    min-height: 22rem;
+    margin: -13rem 0 -8rem;
+}
+div#regions {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+.talks-top{
+    min-height: 8rem;
+    margin-top: -7rem;
+}
+div#dialogues {
+    padding-bottom: 4rem;
+}
+.faq-top{
+    min-height: 11rem;
+    margin-top: -10rem;
+}
+div#faq {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-bottom {
+    min-height: 18rem;
+    margin: -13rem 0 -7rem;
+}
+div#figure {
+    padding-top: 6rem;
+    padding-bottom: 5rem
+}
+.news-top{
+    min-height: 10rem;
+    margin-top: -10rem;
+}
+div#news {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    z-index: 2000;
+    position: relative;
+}
+.newsletter-top{
+    min-height: 10rem;
+    margin-top: -10rem;
+}
+div#suscription {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.newsletter-bottom {
+    min-height: 18rem;
+    margin: -13rem 0 -6rem;
+}
+div#spread {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.contact-top{
+    min-height: 11rem;
+    margin-top: -10rem;
+}
+div#contact {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.contact-bottom {
+    min-height: 21rem;
+    margin: -11rem 0 -9rem;
+}
+div#logos {
+    padding-top: 4rem;
+}
+//Images
+.video-bg {
+    padding: 4rem 0;
+    background-position: 33rem 1rem;
+    background-size: 50%;
+}
+.welcome{
+    float: right;
+    top: -28rem;
+    margin-bottom: -22rem;
+}
+.native{
+    margin-top: -54rem;
+    width: 32%;
+}
+.contact {
+    margin-left: -4rem;
+    width: 40%;
+    margin-bottom: -35rem;
+}
+}    
+
+@media print, screen and (max-width: 62em){
+.hero-heading {
+    font-size: 3.5rem;
+}
+.l-left-s-center{
+    text-align: center;
+}
+.visible-mobile{
+    display:block;
+}
+.visible-desk{
+    display:none;
+}
+//Borders
+.hero__container {
+    padding: 13rem 0 19rem;
+}
+.welcome-top {
+    min-height: 22rem;
+    margin: -17rem 0 -10rem;
+}
+.welcome-bottom {
+    min-height: 24rem;
+    margin: -18rem 0 -7rem;
+}
+div#participate {
+    padding-top: 9rem;
+    padding-bottom: 10rem;
+}
+.access-top {
+    min-height: 20rem;
+    margin: -9rem 0 -12rem;
+}
+div#accessibility {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+div#native-language {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+.docs-top {
+    min-height: 18rem;
+    margin: -15rem 0 -11rem;
+}
+div#documents {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.docs-bottom {
+    margin: -13rem 0 -13rem;
+}
+div#regions {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+.talks-top {
+    min-height: 15rem;
+    margin: -6rem 0 -7rem;
+}
+div#dialogues{
+    padding-top:0;
+    padding-bottom: 6rem;
+}
+.faq-top {
+    min-height: 30rem;
+    margin: -16rem 0 -14rem;
+}
+div#figure {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+.news-top {
+    min-height: 17rem;
+    margin: -12rem 0 -9rem;
+}
+.newsletter-top {
+    min-height: 15rem;
+    margin: -7rem 0 -4rem;
+}
+.newsletter-bottom {
+    margin: -12rem 0 -6rem;
+}
+div#spread {
+    padding-top: 4rem;
+}
+.contact-top {
+    margin: -8rem 0 -8rem;
+    min-height: 17rem;
+}
+.contact-bottom {
+    margin: -14rem 0 -9rem;
+}
+    
+//Images
+.video-bg {
+    background:none;
+}
+.welcome{
+    display:none;
+}
+.native{
+    display:none;
+}
+.contact {
+    display:none;
+}
+}
+
+
+@media print, screen and (min-width: 40em){
+.main-nav__link a {
+    padding: 1.4em 2em;
+}
+.main-nav__link--active a {
+    box-shadow: inset 0 4px 0 0 white;
+}
+}
