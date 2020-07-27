@@ -696,8 +696,20 @@ p#success-subscription {
     padding-top: 1.2rem;
     margin: 0;
 }
+.main-footer__badge {
+    width: auto;
+}
+.main-footer__badge>img {
+    position: relative;
+    width: 14rem;
+    top: -2rem;
+    left: 8rem;
+}
 
 @media print, screen and (max-width: 80em){
+.main-footer__badge>img {
+    top: -1rem;
+}
 .floating-helper__content-inner p {
     font-size: 2.5rem;
 }
