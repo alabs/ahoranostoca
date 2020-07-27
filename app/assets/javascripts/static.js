@@ -5,7 +5,10 @@
 $(document).ready(function(){
   $("div.floating-helper-container").addClass("hide");
   var pathURL = $(location).attr("pathname");
-  if (pathURL == "/assemblies"){
+  if (pathURL == "/assemblies" ){
+    $("div.floating-helper-container").removeClass("hide");
+  }
+  if (pathURL == "/processes" ){
     $("div.floating-helper-container").removeClass("hide");
   }
 });
