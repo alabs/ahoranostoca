@@ -166,6 +166,7 @@ a:hover{
 }
 .hero{
     background-size: contain;
+    margin-top: -217px;
 }
 .bg-white{
     background-color: white;
@@ -706,7 +707,30 @@ p#success-subscription {
     left: 8rem;
 }
 
+.rrss{
+  background: white;
+  top: 260px;
+  width: 50px;
+  color: white;
+  margin: 0 0 10px;
+  padding: 7px 0 7px 0;
+  text-align: center;
+  a{
+    color: white;
+    &:hover{
+      color: white;
+    }
+    &:focus{
+      color: white;
+    }
+  }
+}
+
+
 @media print, screen and (max-width: 80em){
+.rrss-stick{
+    display: none;
+}    
 .main-footer__badge>img {
     top: -1rem;
 }
@@ -717,6 +741,9 @@ p#success-subscription {
     display:none;
 }
     //Border backgrounds
+.hero{
+    margin-top: 0;
+}
 .hero__container {
     padding: 8rem 0 14rem;
 }
