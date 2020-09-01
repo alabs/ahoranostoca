@@ -1018,12 +1018,15 @@ div#spread {
 }
 }
 
-
-@media print, screen and (min-width: 40em){
+@media print, screen and (max-width: 40em){
 .omnipresent-banner .omnipresent-banner-short-description {
     position: relative;
     top: 0.3em;
 }    
+}
+
+
+@media print, screen and (min-width: 40em){
 .main-nav__link a {
     padding: 1.4em 2em;
 }
