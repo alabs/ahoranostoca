@@ -733,6 +733,29 @@ p#success-subscription {
     text-align: -ms-right;
 }
 
+.omnipresent-banner{
+    background-color: $yellow;
+}
+
+.omnipresent-banner a {
+    color: black;
+}
+.omnipresent-banner a:hover, .omnipresent-banner a:focus {
+    color: black;
+}
+.omnipresent-banner svg.icon--media-play.icon {
+    display: none;
+}
+.omnipresent-banner .omnipresent-banner-short-description {
+    background: #1a181d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 0.7em 0.7em 0.5em;
+    border-radius: 6px;
+}
 
 @media print, screen and (max-width: 80em){
 .rrss-stick{
@@ -997,6 +1020,10 @@ div#spread {
 
 
 @media print, screen and (min-width: 40em){
+.omnipresent-banner .omnipresent-banner-short-description {
+    position: relative;
+    top: 0.3em;
+}    
 .main-nav__link a {
     padding: 1.4em 2em;
 }
