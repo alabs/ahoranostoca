@@ -14,6 +14,7 @@ Decidim.configure do |config|
   #   here_app_id: Rails.application.secrets.geocoder[:here_app_id],
   #   here_app_code: Rails.application.secrets.geocoder[:here_app_code]
   # }
+  config.maximum_attachment_size = 25.megabytes
 
   # Custom resource reference generator method
   # config.reference_generator = lambda do |resource, component|
@@ -126,3 +127,10 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+Decidim.menu :menu do |menu|
+  menu.item I18n.t("decidim.menu.noticias"),
+    "https://ahoranostocaparticipar.cl/processes/noticias/f/6/",
+    position: 5,
+    active: false
+end

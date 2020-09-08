@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'static/contact'
+  post 'static/newsletter'
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
