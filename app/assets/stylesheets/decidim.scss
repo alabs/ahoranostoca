@@ -339,9 +339,13 @@ a>h4.home-subtitle:hover{
     background-repeat: no-repeat;
     min-height: 17rem;
     margin-top: -16rem;
+    margin-bottom: -4rem;
     z-index: 100;
     position: relative;
     background-size: cover;
+}
+div#video{
+    padding: 0;
 }
 .welcome-bottom {
     background-image: url(https://ahoranostocaparticipar.cl/images/welcome-bottom.svg);
@@ -353,15 +357,15 @@ a>h4.home-subtitle:hover{
     z-index: 100;
 }
 div#participate {
-    padding-top: 18rem;
-    padding-bottom: 10rem;
+    padding-top: 0;
+    padding-bottom: 9rem;
 }
 .access-top{
     background-image: url(https://ahoranostocaparticipar.cl/images/access-top.svg);
     background-repeat: no-repeat;
     min-height: 20rem;
-    margin-top: -11rem;
-    z-index: 100;
+    margin-top: -13rem;
+    z-index: 5000;
     position: relative;
     background-size: cover;
 }
@@ -381,6 +385,16 @@ div#accessibility {
 div#native-language {
     padding-top: 14rem;
     padding-bottom: 16rem;
+}
+.participate-top{
+    background-image: url(https://ahoranostocaparticipar.cl/images/docs-top.svg);
+    background-repeat: no-repeat;
+    min-height: 19rem;
+    margin-top: -12rem;
+    z-index: 100;
+    position: relative;
+    background-size: cover;
+    margin-bottom: -8rem;
 }
 .docs-top{
     background-image: url(https://ahoranostocaparticipar.cl/images/docs-top.svg);
@@ -779,11 +793,16 @@ p#success-subscription {
 }
 .welcome-top{
     min-height: 14rem;
-    margin-top: -12rem;
+    margin-top: -11rem;
 }
 .welcome-bottom {
     min-height: 24rem;
     margin: -14rem 0 -7rem;
+}
+.participate-top{
+    min-height: 13rem;
+    margin-top: -13rem;
+    margin-bottom: -8rem;
 }
 div#participate {
     padding-top: 10rem;
@@ -926,9 +945,12 @@ div#logos {
 .hero__container {
     padding: 13rem 0 19rem;
 }
+div#welcome{
+    padding: 12rem 0;
+}
 .welcome-top {
     min-height: 22rem;
-    margin: -17rem 0 -10rem;
+    margin: -17rem 0 -11rem;
 }
 .welcome-bottom {
     min-height: 24rem;
@@ -950,13 +972,16 @@ div#native-language {
     padding-top: 10rem;
     padding-bottom: 15rem;
 }
-.docs-top {
+.participate-top {
     min-height: 18rem;
-    margin: -15rem 0 -11rem;
+    margin: -8rem 0 -11rem;
 }
 div#documents {
     padding-top: 4rem;
     padding-bottom: 2rem;
+}
+.dosc-top{
+    margin-bottom: -7rem;
 }
 .docs-bottom {
     margin: -13rem 0 -13rem;
