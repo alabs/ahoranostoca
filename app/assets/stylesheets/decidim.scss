@@ -639,3 +639,12 @@ p#success-subscription {
     top: 0.3em;
 }
 }
+
+@media print, screen and (min-width: 40em){
+.main-nav__link a {
+    padding: 1.4em 2em;
+}
+.main-nav__link--active a {
+    box-shadow: inset 0 4px 0 0 white;
+}
+}
