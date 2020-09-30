@@ -158,9 +158,6 @@ h4, h5, h6 {
 h6{
     font-size: 1.8rem;
 }
-p{
-    font-size: 1.1rem;
-}
 a:hover{
     color: $blue;
 }
@@ -562,9 +559,6 @@ div#logos {
 }
 
 //Cards
-.heading5, .card__title, .author-data--big .author__name {
-    font-size: 1.8em;
-}
 .card__status {
     display: none;
 }
