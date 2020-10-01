@@ -363,6 +363,12 @@ a>h4.home-subtitle:hover{
 }
 
 //Cards
+.heading5, .card__title, .author-data--big .author__name, .card__link {
+		color: $black;
+}
+.heading5, .card__title, .author-data--big .author__name,{
+    font-size: 1.8em;
+}
 .card__status {
     display: none;
 }
