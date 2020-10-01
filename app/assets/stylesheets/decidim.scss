@@ -183,6 +183,9 @@ a:hover{
     background-repeat: repeat;
     background-size: auto;
 }
+.hero {
+    margin-top: -297px;
+}
 .hero::after{
     background-color: transparent;
 }
@@ -336,35 +339,6 @@ a>h4.home-subtitle:hover{
 .section-over-over{
     position: relative;
     z-index: 7000;
-}
-
-//Images
-.video-bg {
-    background-image: url(https://ahoranostocaparticipar.cl/images/video.png);
-    background-repeat: no-repeat;
-    padding: 4rem 0;
-    background-position: 33rem 1rem;
-    background-size: 50%;
-}
-.welcome{
-    position: relative;
-    z-index: 5000;
-    float: right;
-    top: -28rem;
-    margin-bottom: -22rem;
-}
-.native{
-    position: relative;
-    margin-top: -54rem;
-    width: 32%;
-    z-index: 5000;
-}
-.contact {
-    margin-left: -4rem;
-    width: 35%;
-    position: relative;
-    z-index: 4000;
-    margin-bottom: -53rem;
 }
 
 //Documents
@@ -587,10 +561,7 @@ p#success-subscription {
     border-radius: 6px;
 }
 
-@media print, screen and (max-width: 80em){
-.rrss-stick{
-    display: none;
-}
+@media print, screen and (max-width: 1280px){
 .main-footer__badge>img {
     top: -1rem;
 }
@@ -601,65 +572,38 @@ p#success-subscription {
     display:none;
 }
 
-//Images
-.video-bg {
-    padding: 4rem 0;
-    background-position: 33rem 1rem;
-    background-size: 50%;
-}
-.welcome{
-    float: right;
-    top: -28rem;
-    margin-bottom: -22rem;
-}
-.native{
-    margin-top: -54rem;
-    width: 32%;
-}
-.contact {
-    margin-left: -4rem;
-    width: 40%;
-    margin-bottom: -35rem;
-}
 }
 
-@media print, screen and (max-width: 62em){
-.hero-heading {
-    font-size: 3.5rem;
-}
-.l-left-s-center{
-    text-align: center;
-}
-.visible-mobile{
-    display:block;
-}
-.visible-desk{
-    display:none;
+@media print, screen and (max-width: 991px){
+	.rrss-stick{
+	    display: none;
+	}
+	.hero-heading {
+	    font-size: 3.5rem;
+	}
+	.hero {
+	    margin-top: 0;
+	}
+	.l-left-s-center{
+	    text-align: center;
+	}
+	.visible-mobile{
+	    display:block;
+	}
+	.visible-desk{
+	    display:none;
+	}
+
 }
 
-//Images
-.video-bg {
-    background:none;
-}
-.welcome{
-    display:none;
-}
-.native{
-    display:none;
-}
-.contact {
-    display:none;
-}
-}
-
-@media print, screen and (max-width: 40em){
+@media print, screen and (max-width: 640px){
 .omnipresent-banner .omnipresent-banner-short-description {
     position: relative;
     top: 0.3em;
 }
 }
 
-@media print, screen and (min-width: 40em){
+@media print, screen and (min-width: 640px){
 .main-nav__link a {
     padding: 1.4em 2em;
 }
