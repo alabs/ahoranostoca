@@ -1,10 +1,10 @@
-<section class="wrapper-home home-section bg-white section-padding-8" xmlns="http://www.w3.org/1999/xhtml">
+<section class="wrapper-home home-section bg-white section-padding-8 section-center" xmlns="http://www.w3.org/1999/xhtml">
   <div class="row" id="highlighted-assemblies">
     <div class="columns small-centered large-10 text-center mb-3">
       <h2 class="text-uppercase" style="font-size:2.2rem;line-height:1.1">Ahora Nos Toca Participar en Regiones</h2>
     </div>    <div class="row collapse">
-      <div class="row small-up-1 smallmedium-up-2 mediumlarge-up-3
-        large-up-4 card-grid">
+      <div class="row small-up-1 smallmedium-up-1 mediumlarge-up-3
+        large-up-3 card-grid">
         <% highlighted_assemblies.each do |assembly| %>
           <div class="column">
             <article class="card card--assembly card--mini">
@@ -29,7 +29,7 @@
       smallmedium-8 medium-6 large-4">
       <%= link_to t("see_all_assemblies", scope: i18n_scope),
                   decidim_assemblies.assemblies_path,
-                  class: "button expanded hollow button--sc home-section__cta",
+                  class: "button button--sc home-section__cta",
                   title: t("assemblies_button_title", scope: i18n_scope) %>
     </div>
   </div>

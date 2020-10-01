@@ -272,6 +272,14 @@ a>h4.home-subtitle:hover{
         color: white;
     }
 }
+.button-black {
+    background-color: $black;
+    color: white;
+    &:hover{
+        background-color: white;
+        color: $black;
+    }
+}
 .button-news{
     float: right;
     position: relative;
