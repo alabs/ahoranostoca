@@ -1,7 +1,8 @@
-<section class="wrapper-home upcoming-events bg-yellow">
+<section class="wrapper-home upcoming-events bg-yellow section-padding-8">
   <div class="row">
-    <h3 class="section-heading"><%= t("decidim.meetings.content_blocks.upcoming_events.upcoming_events") %></h3>
-    <div class="row">
+    <div class="columns small-centered large-10 text-center mb-3">
+      <h2 class="text-uppercase" style="font-size:2.2rem;line-height:1.1">Próximas actividades</h2>
+    </div>    <div class="row">
       <div class="columns medium-6">
         <% upcoming_events.first(4).each do |event| %>
           <%= card_for event, size: :s %>

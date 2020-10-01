@@ -311,7 +311,16 @@ a>h4.home-subtitle:hover{
     font-size: 3rem;
 }
 
-//Border backgrounds
+//Sections backgrounds
+.section-padding-4{
+	padding: 4em 0;
+}
+.section-padding-8{
+	padding: 8em 0;
+}
+.section-center{
+	text-align: center;
+}
 .section-over{
     position: relative;
     z-index: 2000;
@@ -319,10 +328,6 @@ a>h4.home-subtitle:hover{
 .section-over-over{
     position: relative;
     z-index: 7000;
-}
-.no-subhero{
-    padding: 4rem 0 0;
-    text-align: center;
 }
 
 //Images
