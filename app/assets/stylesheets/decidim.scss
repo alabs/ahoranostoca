@@ -341,6 +341,78 @@ a>h4.home-subtitle:hover{
     z-index: 7000;
 }
 
+//Borders backgrounds
+.border-video-top{
+	background-image: url(<%= asset_path 'border-video-top.svg' %>);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-video-bottom{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-video-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-meetings-top{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-meetings-top.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-meetings-bottom{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-meetings-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-howto-top{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-howto-top.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-howto-bottom{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-howto-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-documents-top{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-documents-top.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-documents-bottom{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-documents-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-suscription-top{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-suscription-top.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+.border-suscription-bottom{
+	background-image: url(https://ahoranostocaparticipar.cl/images/border-suscription-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+}
+
 //Documents
 .heading6 {
     font-size: 1.4em;
