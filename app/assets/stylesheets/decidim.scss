@@ -185,6 +185,7 @@ a:hover{
 }
 .hero {
     margin-top: -297px;
+		padding-bottom: 14em;
 }
 .hero::after{
     background-color: transparent;
@@ -323,6 +324,9 @@ a>h4.home-subtitle:hover{
 }
 
 //Sections backgrounds
+.section-padding-0{
+	padding: 0 0;
+}
 .section-padding-4{
 	padding: 4em 0;
 }
@@ -334,83 +338,140 @@ a>h4.home-subtitle:hover{
 }
 .section-over{
     position: relative;
-    z-index: 2000;
+    z-index: 500;
 }
 .section-over-over{
     position: relative;
-    z-index: 7000;
+    z-index: 1000;
 }
 
 //Borders backgrounds
 .border-video-top{
-	background-image: url(<%= asset_path 'border-video-top.svg' %>);
+	background-image: asset_url('border-video-top.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 18em;
+	margin-top: -15em;
+}
+div#video{
 }
 .border-video-bottom{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-video-bottom.svg);
+	background-image: asset_url('border-video-bottom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 27em;
+	margin-top: -15em;
+}
+section#processes{
+	margin-top: -4em;
+	padding-top: 12em;
+	padding-bottom: 19em;
 }
 .border-meetings-top{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-meetings-top.svg);
+	background-image: asset_url('border-meetings-top.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 17em;
+	margin-top: -16em;
+}
+section#meetings{
 }
 .border-meetings-bottom{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-meetings-bottom.svg);
+	background-image: asset_url('border-meetings-bottom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 26em;
+	margin-top: -19em;
+}
+section#assemblies{
+	margin-top: -6em;
+	padding-top: 16em;
+	padding-bottom: 16em;
 }
 .border-howto-top{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-howto-top.svg);
+	background-image: asset_url('border-howto-top.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 15em;
+  margin-top: -15em;
+}
+section#howto{
 }
 .border-howto-bottom{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-howto-bottom.svg);
+	background-image: asset_url('border-howto-bottom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 26em;
+  margin-top: -21em;
+}
+section#banner{
+	margin-top: -6em;
+  padding-top: 12em;
+  padding-bottom: 12em;
 }
 .border-documents-top{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-documents-top.svg);
+	background-image: asset_url('border-documents-top.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 5em;
+	margin-top: -6em;
+}
+div#documents{
+	padding-top: 12em;
+	padding-bottom: 4em;
 }
 .border-documents-bottom{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-documents-bottom.svg);
+	background-image: asset_url('border-documents-bottom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 33em;
+	margin-top: -18em;
+}
+div#figure{
+	margin-top: -15em;
+	padding-top: 10em;
+	padding-bottom: 3em;
 }
 .border-suscription-top{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-suscription-top.svg);
+	background-image: asset_url('border-suscription-top.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 8em;
+	margin-top: -7em;
+}
+div#suscription {
+  padding: 4em 0 0em;
 }
 .border-suscription-bottom{
-	background-image: url(https://ahoranostocaparticipar.cl/images/border-suscription-bottom.svg);
+	background-image: asset_url('border-suscription-bottom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 100;
+	min-height: 24em;
+  margin-top: -16em;
+}
+div#contact{
+	margin-top: -7em;
+	padding-top: 12em;
 }
 
 //Documents
@@ -644,6 +705,47 @@ p#success-subscription {
     display:none;
 }
 
+//Borders backgrounds
+div#video{
+	margin-top: -7em;
+	margin-bottom: -23em
+}
+section#meetings {
+    margin-top: -9em;
+    margin-bottom: -22em;
+}
+section#howto {
+    margin-top: -4em;
+}
+div#documents {
+    padding-top: 6em;
+    padding-bottom: 0em;
+}
+.border-documents-bottom{
+	min-height: 33em;
+	margin-top: -18em;
+}
+div#figure{
+	margin-top: -15em;
+	padding-top: 10em;
+	padding-bottom: 3em;
+}
+.border-suscription-top{
+	min-height: 8em;
+	margin-top: -7em;
+}
+div#suscription {
+  padding: 3em 0 0em;
+}
+.border-suscription-bottom{
+	min-height: 24em;
+  margin-top: -16em;
+}
+div#contact{
+	margin-top: -7em;
+	padding-top: 12em;
+}
+
 }
 
 @media print, screen and (max-width: 991px){
@@ -664,6 +766,40 @@ p#success-subscription {
 	}
 	.visible-desk{
 	    display:none;
+	}
+	//Borders backgrounds
+	.border-video-top{
+		min-height: 14em;
+	}
+	div#video{
+		margin-top: -4em;
+	}
+	section#processes{
+		margin-top: -6em;
+		padding-top: 12em;
+		padding-bottom: 19em;
+	}
+	section#meetings{
+		margin-top: -13em;
+	}
+	section#assemblies{
+		margin-top: -10em;
+	}
+	section#howto{
+		margin-top: -7em;
+		padding-top: 0em;
+	}
+	.border-howto-bottom{
+	  margin-top: -23em;
+	}
+	div#documents{
+		padding-top: 2em;
+	}
+	.border-documents-bottom{
+		margin-top: -26em;
+	}
+	div#suscription{
+		padding: 1em 0 0em;
 	}
 
 }
