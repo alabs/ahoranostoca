@@ -1,23 +1,25 @@
-<section id="banner" class="extended highligted-content-banner home-section section-padding-4"
+<section id="banner" class="extended highligted-content-banner home-section section-center section-padding-4"
           style="background-image:url(<%= current_organization.highlighted_content_banner_image.url %>); background-position: center;">
   <div class="highligted-content-banner__container">
     <div class="row">
-      <div class="columns large-10">
-        <h2 class="text-uppercase text-highlight highligted-content-banner-heading">
-          <%= translated_attribute current_organization.highlighted_content_banner_title %>
-        </h2>
-        <span class="text-highlight">
-          <%= decidim_sanitize translated_attribute current_organization.highlighted_content_banner_short_description %>
-        </span>
-      </div>
-      <div class="columns large-2">
+      <div class="columns small-centered large-6">
+        <div>
+          <h2 class="text-uppercase text-highlight highligted-content-banner-heading">
+            <%= translated_attribute current_organization.highlighted_content_banner_title %>
+          </h2>
+          <h3 class="text-highlight">
+            <%= decidim_sanitize translated_attribute current_organization.highlighted_content_banner_short_description %>
+          </h3>
+        </div>
+        <div>
         <%= link_to current_organization.highlighted_content_banner_action_url,
-                    class: "button button-white expanded button--sc" do %>
+                    class: "button button-white button--sc" do %>
           <%= translated_attribute current_organization.highlighted_content_banner_action_title %>
           <span class="button__info">
             <%= translated_attribute current_organization.highlighted_content_banner_action_subtitle %>
           </span>
         <% end %>
+        </div>
       </div>
     </div>
   </div>
