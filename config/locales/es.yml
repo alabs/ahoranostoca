@@ -9,6 +9,11 @@ es:
       index:
         title: "Sobre el proyecto"
         subheading: " "
+    assemblies:
+      pages:
+        home:
+          highlighted_assemblies:
+            assemblies_button_title: Enlace a la página de Asambleas que muestra todas las asambleas
     components:
       blogs:
         name: "Noticias"

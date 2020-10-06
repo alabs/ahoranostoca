@@ -1,0 +1,41 @@
+<div class="border-howto-top"></div>
+<section id="howto" class="extended bg-blue section-over section-padding-4">
+  <div class="wrapper-home">
+    <div class="columns small-centered large-10 text-center mb-3">
+      <h2 class="text-uppercase" style="font-size:2.2rem;line-height:1.1">Preguntas Frecuentes</h2>
+    </div>
+    <div class="row small-up-1 medium-up-3 home-bullets">
+      <div class="column">
+        <div class="home-bullet">
+          <div class="home-bullet__desc">
+            <h4 class="heading4"><%= t("decidim.pages.home.extended.meetings") %></h4>
+            <p><%= t("decidim.pages.home.extended.meetings_explanation") %></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="home-bullet">
+          <div class="home-bullet__desc">
+            <h4 class="heading4"><%= t("decidim.pages.home.extended.debates") %></h4>
+            <p><%= t("decidim.pages.home.extended.debates_explanation") %></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="home-bullet">
+          <div class="home-bullet__desc">
+            <h4 class="heading4"><%= t("decidim.pages.home.extended.proposals") %></h4>
+            <p><%= t("decidim.pages.home.extended.proposals_explanation") %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-centered small-10
+                smallmedium-8 medium-6 large-4 section-center">
+        <%= link_to t("decidim.pages.home.extended.more_info"), decidim.page_path("faq"), class: "button button-white button--sc" %>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="border-howto-bottom"></div>
