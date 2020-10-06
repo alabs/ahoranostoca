@@ -1,0 +1,62 @@
+<div class="rrss-stick sticky-container" data-sticky-container="" style="position: relative; z-index: 10000; height: 296.5px; width: 50px;">
+  <div class="sticky rrss-right is-stuck is-at-top" data-sticky="" data-margin-top="10" data-resize="1xrpo4-sticky" data-mutate="1xrpo4-sticky" data-e="8gscve-e" data-events="resize" style="max-width: 1439px; margin-top: 10em; top: 0px; bottom: auto; right: 0;">
+    <div class="rrss" style="background:#00acee;">
+      <a href="https://twitter.com/ahrnostoca" target="_blank">
+        <img src="https://ahoranostocaparticipar.cl/images/uil_twitter.svg" style="width: 70%">
+      </a>
+    </div>
+    <div class="rrss" style="background:linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);">
+      <a href="https://www.instagram.com/ahoranostocachile/" target="_blank">
+        <img src="https://ahoranostocaparticipar.cl/images/uil_instagram.svg" style="width: 70%">
+      </a>
+    </div>
+    <div class="rrss" style="background:#4267b2;">
+      <a href="https://www.facebook.com/Ahora-nos-toca-100491311521863/" target="_blank">
+        <img src="https://ahoranostocaparticipar.cl/images/uil_facebook-f.svg" style="width: 70%">
+      </a>
+    </div>
+    <div class="rrss" style="background:#FF0000;">
+      <a href="https://www.youtube.com/channel/UCJQZ-TRYaj3hZ53JiGAFYkQ" target="_blank">
+        <img src="https://ahoranostocaparticipar.cl/images/uil_youtube.svg" style="width: 70%">
+      </a>
+    </div>
+    <div class="rrss" style="background:#1DB954;">
+      <a href="https://open.spotify.com/show/0anezcnR7twsqT9QRxOWJE?si=qh7lG4bARyypgMi1FJXFuw" target="_blank">
+        <img src="https://ahoranostocaparticipar.cl/images/uil_spotify.svg" style="width: 70%">
+      </a>
+    </div>
+  </div>
+</div>
+<section class="extended hero home-section" style="background-image:url(<%= background_image %>);">
+  <div class="hero__container">
+    <div class="row">
+      <div class="columns small-centered large-10">
+        <h1 class="text-highlight heading1 hero-heading text-uppercase">
+          <% if translated_welcome_text.blank? %>
+            <%= t("decidim.pages.home.hero.welcome", organization: current_organization.name) %>
+          <% else %>
+            <%= decidim_sanitize translated_welcome_text %>
+          <% end %>
+        </h1>
+        <h2 class="text-highlight" style="margin-bottom:1rem">Accede a información clave, para decidir libremente cómo votar en el plebiscito del 25 de octubre y conocer más sobre el derecho a la participación ciudadana.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-centered small-12 medium-12 mediumlarge-12">
+        <a class="button button--sc home-section__cta" href="//matomo.ahoranostoca.cl/matomo.php?redirecturl=https%3A%2F%2Fahoranostocaparticipar.cl%2Fprocesses%2Fformate&amp;c_i=click&amp;c_n=Home%20hero&amp;c_p=Bot%C3%B3n%20Formate%20aqu%C3%AD&amp;c_t=https%3A%2F%2Fahoranostocaparticipar.cl%2Fprocesses%2Fformate&amp;idsite=3&amp;rec=1&amp;r=104264&amp;h=13&amp;m=47&amp;s=7&amp;url=https%3A%2F%2Fahoranostocaparticipar.cl%2F&amp;_id=c0e8e9e232e9241b&amp;_idts=1595868941&amp;_idvc=52&amp;_idn=0&amp;_refts=1601570799&amp;_viewts=1601570799&amp;_ref=https%3A%2F%2Fpre.ahoranostoca.cl%2F&amp;send_image=0&amp;pdf=1&amp;qt=0&amp;realp=0&amp;wma=0&amp;dir=0&amp;fla=0&amp;java=0&amp;gears=0&amp;ag=0&amp;cookie=1&amp;res=1920x1080&amp;gt_ms=1326&amp;pv_id=IXoksd" style="margin: 0.5rem" data-track-content="" data-content-name="Home hero" data-content-piece="Botón Formate aquí" data-content-target="https://ahoranostocaparticipar.cl/processes/formate">Fórmate aquí</a>
+        <a class="button button--sc home-section__cta" href="//matomo.ahoranostoca.cl/matomo.php?redirecturl=https%3A%2F%2Fahoranostocaparticipar.cl%2Fprocesses%2Fforma-a-otrxs&amp;c_i=click&amp;c_n=Home%20hero&amp;c_p=Bot%C3%B3n%20Forma%20a%20otrxs&amp;c_t=https%3A%2F%2Fahoranostocaparticipar.cl%2Fprocesses%2Fforma-a-otrxs&amp;idsite=3&amp;rec=1&amp;r=287448&amp;h=13&amp;m=47&amp;s=7&amp;url=https%3A%2F%2Fahoranostocaparticipar.cl%2F&amp;_id=c0e8e9e232e9241b&amp;_idts=1595868941&amp;_idvc=52&amp;_idn=0&amp;_refts=1601570799&amp;_viewts=1601570799&amp;_ref=https%3A%2F%2Fpre.ahoranostoca.cl%2F&amp;send_image=0&amp;pdf=1&amp;qt=0&amp;realp=0&amp;wma=0&amp;dir=0&amp;fla=0&amp;java=0&amp;gears=0&amp;ag=0&amp;cookie=1&amp;res=1920x1080&amp;gt_ms=1326&amp;pv_id=IXoksd" style="margin: 0.5rem" data-track-content="" data-content-name="Home hero" data-content-piece="Botón Forma a otrxs" data-content-target="https://ahoranostocaparticipar.cl/processes/forma-a-otrxs">Forma a otrxs</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="border-video-top"></div>
+<div id="video" class="bg-white wrapper-home section-over section-center section-padding-0">
+  <div class="row section-padding-4">
+    <div class="columns small-centered large-8 mb-3">
+      <h2 class="text-uppercase" style="font-size:2.2rem;line-height:1.1">Vivimos un momento histórico</h2>
+      <h3 style="line-height:1;margin:-10px 0 20px">Y queremos que tú seas protagonista</h3>
+      <iframe width="560" height="420" style="box-sizing:border-box;width:100%" src="https://www.youtube.com/embed/jWM4EcFy-h4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+<div class="border-video-bottom"></div>
