@@ -9,11 +9,22 @@ es:
       index:
         title: "Sobre el proyecto"
         subheading: " "
+      home:
+        extended:
+          meetings_explanation: 'Es un proyecto de la sociedad civil que  tiene como objetivo contribuir al fortalecimiento de la democracia y de la cohesión social en Chile.'
+          meetings: '¿Qué es Ahora Nos Toca Participar?'
+          debates_explanation: 'Buscamos promover y resguardar la formación y participación ciudadana ante los procesos eleccionarios previstos desde este año incluyendo el plebiscito del 25 de octubre y el eventual proceso constituyente.'
+          debates: '¿Por qué?'
+          proposals: '¿Quiénes somos?'
+          proposals_explanation: 'Somos más de 750 organizaciones de la sociedad civil que, desde nuestra diversidad, trabajamos a lo largo de todo el país. Nos unimos por primera vez luego del estallido social del 18 de octubre de 2019, en el Nuevo Pacto Social (NPS)'
+          more_info: 'Revisa todas las preguntas'
     assemblies:
       pages:
         home:
           highlighted_assemblies:
             assemblies_button_title: Enlace a la página de Asambleas que muestra todas las asambleas
+            active_assemblies: Territorios
+            see_all_assemblies: Ver todos los territorios
     components:
       blogs:
         name: "Noticias"
@@ -21,7 +32,10 @@ es:
       registrations:
         new:
           subtitle: "Crea una cuenta para poder participar en los diferentes espacios"
-
+    meetings:
+      content_blocks:
+        upcoming_events:
+          view_all_events: Ver todas las actividades
   layouts:
     decidim:
       assembly_navigation:
