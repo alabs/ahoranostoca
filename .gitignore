@@ -33,3 +33,6 @@
 
 # Ignore public uploads
 public/uploads
+
+# IntelliJ Config
+.idea
