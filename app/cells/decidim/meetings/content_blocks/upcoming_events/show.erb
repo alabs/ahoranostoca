@@ -5,11 +5,9 @@
       <h2 class="text-uppercase" style="font-size:2.2rem;line-height:1.1">Próximas actividades</h2>
     </div>
     <div class="row">
-      <div class="columns medium-6">
-        <% upcoming_events.first(4).each do |event| %>
-          <%= card_for event, size: :s %>
-        <% end %>
-      </div>
+      <% upcoming_events.first(6).each do |event| %>
+        <%= card_for event, size: :s %>
+      <% end %>
       <div class="columns medium-6">
         <% if geolocation_enabled? %>
           <%= cell "decidim/meetings/meetings_map", upcoming_events %>
