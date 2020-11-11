@@ -1,5 +1,9 @@
 es:
   decidim:
+    admin:
+      menu:
+        assemblies_submenu:
+          assembly_members: "Candidaturas"
     menu:
       processes: "¿Cómo participar?"
       assemblies: "Territorios"
