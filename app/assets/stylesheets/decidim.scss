@@ -185,7 +185,7 @@ a:hover{
 }
 .hero {
     margin-top: -297px;
-		padding-bottom: 14em;
+		padding-bottom: 8em;
 }
 .hero::after{
     background-color: transparent;
@@ -512,7 +512,7 @@ section#assemblies-chart {
 
 //Process
 section#highlighted-processes {
-    display: none;
+    display: true;
 }
 div#participatory-space-filters {
     display: none;
@@ -780,7 +780,7 @@ div#contact{
 	section#processes{
 		margin-top: -6em;
 		padding-top: 12em;
-		padding-bottom: 19em;
+		padding-bottom: 1em;
 	}
 	section#meetings{
 		margin-top: -13em;
