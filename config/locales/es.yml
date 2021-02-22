@@ -47,8 +47,8 @@ es:
       process_navigation:
         process_menu_item: "Sobre esta sección"
 
----
-en:
+
+es:
   decidim:
     components:
       jitsi_meetings:
