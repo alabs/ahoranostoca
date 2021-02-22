@@ -46,24 +46,3 @@ es:
         assembly_menu_item: "Asamblea territorial"
       process_navigation:
         process_menu_item: "Sobre esta sección"
-
-
-es:
-  decidim:
-    components:
-      jitsi_meetings:
-        name: Jitsi Meetings
-        settings:
-          global:
-            announcement: Announcement
-          step:
-            announcement: Announcement
-    jitsi_meetings:
-      admin:
-        jitsi_meetings:
-          edit:
-            title: Jitsi Meeting
-            save: 'Save'
-        models:
-          components:
-            url: 'Url'
