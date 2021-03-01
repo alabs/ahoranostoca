@@ -52,10 +52,6 @@ es:
       registrations:
         new:
           subtitle: "Crea una cuenta para poder participar en los diferentes espacios"
-    meetings:
-      content_blocks:
-        upcoming_events:
-          view_all_events: Ver todas las actividades
   layouts:
     decidim:
       assembly_navigation:
