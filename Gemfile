@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", "0.20.0"
-gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer', branch: '0.20-stable'
+# gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer', branch: '0.20-stable'
 # gem "decidim-calendar", git: 'https://github.com/alabs/decidim-module-calendar', branch: 'master'
 gem "decidim-jitsi_meetings", "0.20.0", path: 'decidim-module-jitsi_meetings'
 # gem "decidim-consultations", "0.20.0"
