@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: 1fb3541203eccc2054853cfc4a7ec158082156d2
+  branch: 0.20-stable
+  specs:
+    decidim-term_customizer (0.20.0)
+      decidim-admin (~> 0.20.0)
+      decidim-core (~> 0.20.0)
+
 PATH
   remote: decidim-module-jitsi_meetings
   specs:
@@ -795,6 +804,7 @@ DEPENDENCIES
   decidim (= 0.20.0)
   decidim-dev (= 0.20.0)
   decidim-jitsi_meetings (= 0.20.0)!
+  decidim-term_customizer!
   delayed_job_active_record
   ed25519 (>= 1.2, < 2.0)
   faker (~> 1.9)
