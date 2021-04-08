@@ -41,6 +41,7 @@ Decidim.configure do |config|
   # that an organization's administrator injects malicious scripts to spy on or
   # take over user accounts.
   #
+  config.image_uploader_quality = 100
   config.enable_html_header_snippets = false
 
   # SMS gateway configuration
