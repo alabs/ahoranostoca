@@ -642,7 +642,7 @@ p#success-subscription {
 }
 .main-footer__badge>img {
     position: relative;
-    width: 14rem;
+    width: 10rem;
     top: -2rem;
     left: 8rem;
 }
@@ -824,7 +824,11 @@ div#contact{
 }
 
 .title-action__action{
-		display:none;
+		display: none;
+}
+
+.new_filter{
+		display: none;
 }
 
 .new_filter{
