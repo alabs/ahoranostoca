@@ -843,6 +843,6 @@ div#contact{
 	display: none;
 }
 
-.collapsible-list__see-more{
-    display: none;
+.collapsible-list.is-filtered .collapsible-list__see-more{
+	display: none;
 }
